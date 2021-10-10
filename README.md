@@ -28,24 +28,33 @@ https://www.nftondemand.online/
 # Tech:
 
 ## General Diagram:
+Toda la aplicacion esta diferenciada en dos tipos de servicios donde la aplicacion obtiene sus datos para funcionar.
 
-Este es el diagrama general de toda la aplicacion, diferenciando los dos tipos de servicios donde la aplicacion obtiene sus datos.
+## Servicios Centralizados (Cloud Services):
 
-## Centralizados (Cloud Services):
+- AWS Amplify: CI/CD, Hosting y SSL en AWS.
+- EC2: Server subir la imagen a NFT.Storage.
+- API Gateway: Secure communication with NodeJS Server (Upload image to NFT.Storage).
+- DynamoDB: base de datos de usuarios
 
-- Hosting y SSL en AWS.
-- API Gateway para comunicacion con NodeJS.
+## Servicios Decentralizados (Web3.js y comunicacion con Smart Contracts):
 
-## Decentralizados (Web3.js y comunicacion con Smart Contracts):
+- Alchemy:
+	- Obtencion de precios de los NFT en tiempo real. 
+- Metamask:
+	- Despliegue del contrato en la Red de ETH (Ropsten).
+	- Mint de los NFT.
+	- Venta de los NFT mediante Interaccion con Smart Contract. 
+- NFT.Storage:
+ 	- Almacenamiento IPFS del NFT y metadata.json
 
-Alchemy:
-- Obtencion de precios de los NFT en tiempo real.
-Metamask:
-- Despliegue del contrato en la Red de ETH (Ropsten).
-- Mint de los NFT.
-- Venta de los NFT mediante Interaccion con Smart Contract.
-NFT.Storage:
-- Almacenamiento IPFS del NFT y metadata.json
+## Frameworks:
+
+- NodeJS: 
+	- NFT.Storage Node package: Backend para subir la imagen a NFT.Storage.
+	- Express: Manejo de las llamadas api del servidor.
+- ReactJS: Creacion de la pagina en frontend.
+- Remix IDE: Creacion y compilacion del Smart contract.
 
 <img src="./Images/diagram.png">
 
