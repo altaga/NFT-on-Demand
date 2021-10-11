@@ -4,6 +4,12 @@ Socials:
 
 https://www.instagram.com/nft_ondemand/
 
+https://www.facebook.com/NFTonDemand-101718632295561
+
+https://www.youtube.com/channel/UC0Tu8Wk11Bkx092eusUKnow
+
+https://twitter.com/nft_ondemand
+
 
 # NFT on Demand
 
