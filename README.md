@@ -38,14 +38,14 @@ https://www.nftondemand.online/
 ## General Diagram:
 The entire application is differentiated into two types of services where the application obtains its data to function.
 
-## Servicios Centralizados (Cloud Services):
+## Centralized Services (Cloud Services):
 
 - AWS Amplify: CI/CD, Hosting y SSL en AWS.
 - EC2: Server upload the image to NFT.Storage.
 - API Gateway: Secure communication with NodeJS Server (Upload image to NFT.Storage).
 - DynamoDB: user database
 
-## Servicios Decentralizados (Web3.js y comunicacion con Smart Contracts):
+## Decentralized Services (Web3.js and communication with Smart Contracts):
 
 - Alchemy:
 	- Obtaining prices of the NFTs in real time.
