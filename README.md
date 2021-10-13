@@ -36,45 +36,45 @@ https://www.nftondemand.online/
 # Tech:
 
 ## General Diagram:
-Toda la aplicacion esta diferenciada en dos tipos de servicios donde la aplicacion obtiene sus datos para funcionar.
+The entire application is differentiated into two types of services where the application obtains its data to function.
 
 ## Servicios Centralizados (Cloud Services):
 
 - AWS Amplify: CI/CD, Hosting y SSL en AWS.
-- EC2: Server subir la imagen a NFT.Storage.
+- EC2: Server upload the image to NFT.Storage.
 - API Gateway: Secure communication with NodeJS Server (Upload image to NFT.Storage).
-- DynamoDB: base de datos de usuarios
+- DynamoDB: user database
 
 ## Servicios Decentralizados (Web3.js y comunicacion con Smart Contracts):
 
 - Alchemy:
-	- Obtencion de precios de los NFT en tiempo real. 
+	- Obtaining prices of the NFTs in real time.
 - Metamask:
-	- Despliegue del contrato en la Red de ETH (Ropsten).
-	- Mint de los NFT.
-	- Venta de los NFT mediante Interaccion con Smart Contract. 
+	- Deployment of the contract on the ETH Network (Ropsten).
+	- NFT Mint.
+	- Sale of NFTs through Interaction with Smart Contract.
 - NFT.Storage:
- 	- Almacenamiento IPFS del NFT y metadata.json
+ 	- NFT IPFS storage and metadata.json
 
 ## Frameworks:
 
 - NodeJS: 
-	- NFT.Storage Node package: Backend para subir la imagen a NFT.Storage.
-	- Express: Manejo de las llamadas api del servidor.
-- ReactJS: Creacion de la pagina en frontend.
-- Remix IDE: Creacion y compilacion del Smart contract.
+	- NFT.Storage Node package: Backend to upload the image to NFT.Storage.
+	- Express: Handling of server api calls.
+- ReactJS: Creation of the page in frontend.
+- Remix IDE: Creation and compilation of the Smart contract.
 
 <img src="./Images/diagram.png">
 
 ## Minting Process:
 
-Como parte importante de la plataforma este es el algoritmo para realizar el Upload de un NFT en nuestra plataforma, prowered by NFT.storage
+As an important part of the platform, this is the algorithm to upload an NFT to our platform, prowered by NFT.storage
 
 <img src="./Images/diagram2.png">
 
 ## Contract:
 
-El contrato que se despliega cada vez que se quiere subir un NFT a nuestra plataforma es el siguiente.
+The contract that is displayed each time you want to upload an NFT to our platform is the following.
 
     // SPDX-License-Identifier: MIT
 
